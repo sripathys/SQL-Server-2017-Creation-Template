@@ -1,0 +1,111 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus2"
+        },
+        "virtualMachineName": {
+            "value": "App001Database"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "adminUsername": {
+            "value": "mna-user-1"
+        },
+        "virtualNetworkName": {
+            "value": "MKL-North-America-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "app001database988"
+        },
+        "networkSecurityGroupName": {
+            "value": "App001Database-nsg"
+        },
+        "adminPassword": {
+            "value": "Password123"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "testgroupdiag205"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/99b5a123-42e5-4246-91f8-10a98abd0950/resourceGroups/TestGroup/providers/Microsoft.Storage/storageAccounts/testgroupdiag205"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "App001Database-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "sqlConnectivityType": {
+            "value": "Private"
+        },
+        "sqlPortNumber": {
+            "value": 1433
+        },
+        "sqlStorageDisksCount": {
+            "value": 1
+        },
+        "sqlStorageWorkloadType": {
+            "value": "GENERAL"
+        },
+        "sqlStorageDisksConfigurationType": {
+            "value": "NEW"
+        },
+        "sqlStorageStartingDeviceId": {
+            "value": 2
+        },
+        "sqlStorageDeploymentToken": {
+            "value": 41963
+        },
+        "sqlAutopatchingDayOfWeek": {
+            "value": "Sunday"
+        },
+        "sqlAutopatchingStartHour": {
+            "value": "2"
+        },
+        "sqlAutopatchingWindowDuration": {
+            "value": "60"
+        },
+        "sqlAuthenticationLogin": {
+            "value": "mna-user-1"
+        },
+        "sqlAuthenticationPassword": {
+            "value": "Welcome"
+        },
+        "rServicesEnabled": {
+            "value": "false"
+        },
+        "imagepublisher": {
+            "value": "MicrosoftSQLServer"
+        },
+        "imageoffer": {
+            "value": "SQL2017-WS2016"
+        },
+        "imagesku": {
+            "value": "SQLDEV"
+        },
+        "imageversion": {
+            "value": "latest"
+        },
+        "tagKeyName": {
+            "value": "Markel North America Region Production Web Int Tags"
+        },
+        "tagKeyValue": {
+            "value": "MKL-MNA-Prod-Web-Int-WHLSL-IT-John-01062018-Smith-01062018"
+        }
+    }
+}
